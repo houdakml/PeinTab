@@ -117,7 +117,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
 
         >
 
@@ -127,6 +127,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/bonbon"
             android:text="Description : "
+            android:textAlignment="center"
             android:textColor="@android:color/widget_edittext_dark"
             android:textSize="20dp" />
 
@@ -138,6 +139,7 @@
             android:text="test description"
             android:textColor="@android:color/widget_edittext_dark"
             android:textSize="20dp" />
+
 
     </LinearLayout>
 

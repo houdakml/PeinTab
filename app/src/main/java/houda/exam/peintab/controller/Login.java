@@ -2,6 +2,7 @@ package houda.exam.peintab.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import houda.exam.peintab.Data.DataStorage;
 import houda.exam.peintab.globel.Constants;
 import houda.exam.peintab.globel.InputControl;
 import houda.exam.peintab.R;
@@ -41,11 +43,8 @@ public class Login extends AppCompatActivity {
 
         if( InputControl.isValidEmail(email) && InputControl.isValidPassword(password)){
 
-            SharedPreferences sharedPref =  getSharedPreferences(Constants.MY_PREF, Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor = sharedPref.edit();
-            editor.putBoolean(Constants.PREF_IS_CONNECTED,true);
-            editor.apply();
-            startActivity(new Intent(Login.this, Home.class));
+            DataStorage.GeneratSharedPref(getApplicationContext());
+            startActivity(new Intent(getApplicationContext(), Home.class));
             finish();
         }
         else if(!InputControl.isValidEmail(email)){

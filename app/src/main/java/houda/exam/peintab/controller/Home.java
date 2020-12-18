@@ -4,15 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
+
+import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import houda.exam.peintab.Data.DataStorage;
 import houda.exam.peintab.globel.Constants;
 import houda.exam.peintab.model.Peintab;
 import houda.exam.peintab.R;
@@ -59,12 +60,11 @@ public class Home extends AppCompatActivity {
 
 
     private void logoutUser(){
-        SharedPreferences sharedPref =  getSharedPreferences(Constants.MY_PREF, Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putBoolean(Constants.PREF_IS_CONNECTED,false);
-        editor.apply();
-        startActivity(new Intent(Home.this, Login.class));
-        finish();
-    }
+        DataStorage.DeleteSharedPref(getApplicationContext());
+
+        startActivity(new Intent(getApplicationContext(), Login.class));
+            finish();
+        }
+
 
 }
