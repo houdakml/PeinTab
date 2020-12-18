@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PeinTab</string>
+
+    <string name="tab">Painting table</string>
+    <string name="log_out">log out</string>
+    <string name="mail_hint">enter your email</string>
+    <string name="pass_hint">enter your password</string>
+    <string name="log_in">login</string>
+</resources>
