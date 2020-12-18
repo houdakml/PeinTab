@@ -6,7 +6,6 @@
     android:layout_height="120dp"
     android:layout_margin="5dp"
     card_view:cardBackgroundColor="#D1E4F1"
-
     card_view:cardCornerRadius="5dp"
     card_view:cardElevation="2dp"
     card_view:contentPadding="16dp">
@@ -16,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="#DAF2F3"
+        android:background="@drawable/card"
         android:foregroundTint="#9C887C7C"
         android:orientation="horizontal">
 
@@ -24,7 +23,6 @@
             android:id="@+id/tableau"
             android:layout_width="150dp"
             android:layout_height="100dp"
-
             android:src="@drawable/fast" />
 
         <LinearLayout
