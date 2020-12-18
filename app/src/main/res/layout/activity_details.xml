@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingRight="15dp"
     app:barrierMargin="12dp"
     tools:context=".controller.Details">
 
 
     <ImageView
         android:id="@+id/tabl"
-        android:layout_width="207dp"
-        android:layout_height="142dp"
-
+        android:layout_width="220dp"
+        android:layout_height="220dp"
         android:src="@drawable/fast"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,52 +21,120 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.047" />
 
+
+    <TextView
+        android:id="@+id/tv_tittle"
+        android:layout_width="67dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/bonbon"
+        android:text="Title : "
+        android:textColor="@android:color/widget_edittext_dark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tit"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.397" />
+
     <TextView
         android:id="@+id/tit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="196dp"
+        android:fontFamily="@font/bonbon"
         android:text="test"
+        android:textColor="@android:color/widget_edittext_dark"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_artist"
+        android:layout_width="67dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/bonbon"
+        android:text="Artist : "
+        android:textColor="@android:color/widget_edittext_dark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/art"
+        app:layout_constraintHorizontal_bias="0.729"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabl" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469" />
 
     <TextView
         android:id="@+id/art"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="180dp"
+        android:fontFamily="@font/bonbon"
         android:text="test1"
+        android:textColor="@android:color/widget_edittext_dark"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="67dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="388dp"
+        android:fontFamily="@font/bonbon"
+        android:text="Date : "
+        android:textColor="@android:color/widget_edittext_dark"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/date"
+        app:layout_constraintHorizontal_bias="0.71"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tit" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="136dp"
+        android:fontFamily="@font/bonbon"
         android:text="test"
+        android:textColor="@android:color/widget_edittext_dark"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_descrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/bonbon"
+        android:text="Description : "
+        android:textColor="@android:color/widget_edittext_dark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/art" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.626" />
 
     <TextView
         android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-       android:layout_marginLeft="@dimen/cardview_default_radius"
-        android:layout_marginTop="96dp"
-        android:text="test1"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/bonbon"
+        android:text="test"
+        android:textColor="@android:color/widget_edittext_dark"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/date" />
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toEndOf="@+id/tv_descrip"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.626" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
