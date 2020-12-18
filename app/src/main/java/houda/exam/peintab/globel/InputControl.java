@@ -3,7 +3,7 @@ package houda.exam.peintab.globel;
 import android.text.TextUtils;
 import android.util.Patterns;
 
-public class Control {
+public class InputControl {
 
 
     public static boolean isValidEmail(CharSequence target) {

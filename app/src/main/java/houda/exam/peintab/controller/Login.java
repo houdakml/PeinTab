@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import houda.exam.peintab.globel.Constants;
-import houda.exam.peintab.globel.Control;
+import houda.exam.peintab.globel.InputControl;
 import houda.exam.peintab.R;
 
 public class Login extends AppCompatActivity {
@@ -39,7 +39,7 @@ public class Login extends AppCompatActivity {
         String email=edt_mail.getText().toString();
         String password=edt_password.getText().toString();
 
-        if( Control.isValidEmail(email) && Control.isValidPassword(password)){
+        if( InputControl.isValidEmail(email) && InputControl.isValidPassword(password)){
 
             SharedPreferences sharedPref =  getSharedPreferences(Constants.MY_PREF, Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPref.edit();
@@ -48,7 +48,7 @@ public class Login extends AppCompatActivity {
             startActivity(new Intent(Login.this, Home.class));
             finish();
         }
-        else if(!Control.isValidEmail(email)){
+        else if(!InputControl.isValidEmail(email)){
             Toast.makeText(getApplicationContext(),Constants.MSG_TEST_MAIL,Toast.LENGTH_LONG).show();
         }
         else {
