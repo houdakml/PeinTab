@@ -43,7 +43,7 @@ public class Home extends AppCompatActivity {
         peintabList.add(new Peintab(R.drawable.mona_lisa,"Mona Lisa","Leonardo da Vinci", "1503–1506, perhaps continuing until 1517",Constants.TEXT_DESCRIPTION_MONA_LISA));
         peintabList.add(new Peintab(R.drawable.girl_with_pearl_earring,"Girl with a Pearl Earring","Johannes Vermeer", "1665",Constants.TEXT_DESCRIPTION_GIRL_PEARL_EARRING));
         peintabList.add(new Peintab(R.drawable.the_persistence_of_memory,"The Persistence of Memory","Salvador Dalí", "1931",Constants.TEXT_DESCRIPTION_THE_PERSISTENCE_OF_MEMORY));
-        peintabList.add(new Peintab(R.drawable.adele_bloch_bauer,"Portrait of Adele Bloch-Bauer I","Gustav Klimt", "1907",Constants.TEXT_DESCRIPTION_LADY_IN_GOLD));
+        peintabList.add(new Peintab(R.drawable.adele_bloch_bauer,"Portrait of Adele Bloch-Bauer","Gustav Klimt", "1907",Constants.TEXT_DESCRIPTION_LADY_IN_GOLD));
         peintabList.add(new Peintab(R.drawable.the_milkmaid,"The Milkmaid","J.Vermeer.", "1657–1658", Constants.TEXT_DESCRIPTION_THE_MILKMAID));
         peintabList.add(new Peintab(R.drawable.starry_night,"The Starry Night","Vincent van Gogh", "1889",Constants.TEXT_DESCRIPTION_THE_STARRY_NIGHT));
 

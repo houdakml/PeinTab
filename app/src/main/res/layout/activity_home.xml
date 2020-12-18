@@ -12,17 +12,30 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:autoLink="web"
-        android:drawableLeft="@drawable/ic_baseline_how_to_reg_24"
-        android:linksClickable="false"
-        android:selectAllOnFocus="false"
+        android:layout_marginRight="25dp"
+        android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+        android:fontFamily="@font/akronim"
         android:text="@string/log_out"
+        android:textColor="#DA0F0F"
         android:textSize="30sp"
+        android:textStyle="bold" />
 
-        />
 
-<androidx.recyclerview.widget.RecyclerView
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="326dp"
+        android:drawableLeft="@drawable/ic_baseline_how_to_reg_24"
+        android:fontFamily="@font/akronim"
+        android:text="Hello"
+        android:textColor="#CDA6EA"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="10dp"
